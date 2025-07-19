@@ -1,0 +1,30 @@
+{
+  "name": "church-ai-platform",
+  "version": "1.0.0",
+  "description": "Palantir 스타일의 교회 사역 AI 플랫폼",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "church",
+    "ai",
+    "palantir",
+    "ministry",
+    "dashboard",
+    "analytics"
+  ],
+  "author": "Church AI Platform Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+} 
