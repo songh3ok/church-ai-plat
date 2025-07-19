@@ -1,5 +1,5 @@
 {
-  "name": "church-ai-platform",
+  "name": "church-ai-platform-root",
   "version": "1.0.0",
   "description": "Palantir 스타일의 교회 사역 AI 플랫폼",
   "main": "backend/server.js",
@@ -7,7 +7,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && npm run dev",
     "client": "cd frontend && npm start",
-    "build": "cd frontend && npm run build",
+    "build": "echo 'Build handled by vercel.json configuration'",
     "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
     "start": "cd backend && npm start"
   },
